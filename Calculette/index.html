@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculette</title>
+    <link rel="stylesheet" href="calcul.css">
+</head>
+
+<body>
+      <div id="calculette">
+            <header>
+                <h1>Super-Calculette JS</h1>
+                <p>Découverte des opérateurs de JavaScript</p>
+            </header>
+
+            <div class="zone-entree">
+                <h2>Etape 1 : Saisie du premier opérande</h2>
+                    <input type="text" id="operande1" value="1" />
+                    <select id="operande1-type">
+                        <option value="number">Valeur numérique</option>
+                        <option value="string">Chaîne</option>
+                    </select>
+           </div>
+        
+         <div class="zone-entree">
+            <h2>Etape 2 : Choix de l'opérateur</h2>
+            <div class="choix-operateurs">
+                <h3>Opérateurs arithmétiques</h3>
+    
+                    <input type="radio" name="operateur" value="+" checked>+&nbsp;
+                    <input type="radio" name="operateur" value="-">-&nbsp;
+                    <input type="radio" name="operateur" value="*">*&nbsp;
+                    <input type="radio" name="operateur" value="/">/&nbsp;
+                    <input type="radio" name="operateur" value="%">%&nbsp;
+         
+                <h3>Opérateur sur chaîne de texte (string)</h3>
+                <input type="radio" name="operateur" value="concat">+ (concaténation)&nbsp;
+                
+            <h3>Opérateurs de comparaison</h3>
+                <input type="radio" name="operateur" value="==">==&nbsp;
+                <input type="radio" name="operateur" value="===">===&nbsp;
+                <input type="radio" name="operateur" value="!=">!=&nbsp;
+                <input type="radio" name="operateur" value="!==">!==&nbsp;
+                <input type="radio" name="operateur" value=">">&gt;&nbsp;
+                <input type="radio" name="operateur" value=">=">&gt;=&nbsp;
+                <input type="radio" name="operateur" value="<">&lt;&nbsp;
+                <input type="radio" name="operateur" value="<=">&lt;=&nbsp;
+            </div>
+        </div>
+                
+        <div class="zone-entree">
+            <h2>Etape 3 : Saisie du second opérande</h2>
+            <input type="text" id="operande2" value="1">
+            <select id="operande2-type">
+                <option value="number">Valeur numérique</option>
+                <option value="string">Chaine de caractères</option>
+            </select>
+        </div>
+            
+            <div class="zone-entree">
+                <h2>Etape 4 : Lancement du calcul</h2>
+                <input type="submit" id="soumettre" value="Calculer !">
+           </div>
+       <hr>
+        <div class="zone-sortie">
+            <h2>Résultat</h2>
+            <h3>Opération demandée :</h3>
+            <span id="final-operation">???</span>
+        
+            
+            <h3>Valeur renvoyée :</h3>
+            <span id="resultat">???</span>
+         </div>
+    </div>
+     <script src="main.js"></script>
+</body>
+</html>
